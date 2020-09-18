@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeReview 02</title>
+
+    <!--An external stylesheet is used-->
+    <link rel='stylesheet' type="text/css" href='style.css'>
+
+</head>
+
+<body>
+
+<!--Setting up the html structure, semantic elements are used for better readability-->   
+
+<div class='container'>
+
+    <header>
+        <img src="img/logo-newspaper-cf.png" alt="newspaper CF">
+        <a href="https://www.codefactory.wien/" id="banner-1">
+            <img src="img/banner-1.png" alt="Full Stack Web Development course">
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="article.html">Article</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p id="date">Friday, 17.09.2021</p>
+
+        <section class="content_top">
+
+            <div class="banner">
+                Top News
+            </div>
+
+            <a href="article.html" class="article_top">
+                <article>
+                    <img src="img/jeff.png" alt="jeff" class="article_image">
+                    <div class="headline_box">
+                        <p class="headline">Lex Luthor or the boy next door?</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="article.html" class="article_top">
+                <article>
+                    <img src="img/eu.png" alt="eu" class="article_image">
+                    <div class="headline_box">
+                        <p class="headline">10 ways to keep your files safe</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="article.html" class="article_top">
+                <article>
+                    <img src="img/phone.png" alt="phone" class="article_image">
+                    <div class="headline_box">
+                        <p class="headline">Spotify raises limit of offline songs to 10,000 per device</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.codefactory.wien/" id="banner-mobile-fswd">
+                <img src="img/banner-mobile-fswd.png" alt="Full Stack Web Development course" id="banner-mobile-fswd_image">
+            </a>
+
+            <div class="banner">
+                Popular
+            </div>
+
+            <a href="article.html" class="article_top">
+                <article>
+                    <img src="img/iphone.png" alt="iphone" class="article_image">
+                    <div class="headline_box">
+                        <p class="headline">All the reasons to avoid purchasing an iPhone</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="article.html" class="article_top">
+                <article>
+                    <img src="img/one.png" alt="one" class="article_image">
+                    <div class="headline_box">
+                        <p class="headline">OnePlus announces new solar-powered earphones</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="article.html" class="article_top">
+                <article>
+                    <img src="img/musk.jpg" alt="musk" class="article_image">
+                    <div class="headline_box">
+                        <p class="headline">Elon Musk smokes a cigarette in space</p>
+                    </div>
+                </article>
+            </a>
+
+
+            <a href="https://www.codefactory.wien/" id="banner-mobile-cf">
+                <img src="img/banner-mobile-cf.png" alt="Full Stack Web Development course" id="banner-mobile-cf_image">
+            </a>
+
+
+        </section>
+
+        <!--The advertisment banner can be inserted indepently of content before and after-->
+        <a href="https://www.codefactory.wien/" id="banner-3">
+            <img src="img/banner-3.png" alt="How to become a developer?">
+        </a>
+
+        <!--The bottom content is nested in aseparate container due to its different alignement-->
+        <section class="content_bottom">
+
+            <div class="column">
+
+                <a href="article.html" class="article_bottom">
+                    <article>
+                        <img src="img/polar.png" alt="polar" class="article_image">
+                        <div class="headline_box">
+                            <p class="headline">Polar watches will watch you when you sleep</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="article.html" class="article_bottom">
+                    <article>
+                        <img src="img/smart.png" alt="smart" class="article_image">
+                        <div class="headline_box">
+                            <p class="headline">Polar watches will watch you when you sleep</p>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+
+            <div class="column">    
+    
+                <a href="article.html" class="article_bottom">
+                    <article>
+                        <img src="img/nasa.png" alt="nasa" class="article_image">
+                        <div class="headline_box">
+                            <p class="headline">Popular holiday destinations for this Christmas</p>
+                        </div>
+                    </article>
+                </a>
+    
+                <a href="article.html" class="article_bottom">
+                    <article>
+                        <img src="img/snowden.jpg" alt="snowden" class="article_image">
+                        <div class="headline_box">
+                            <p class="headline">Why Javascript is the perfect technology for you</p>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+            
+            <a href="https://www.codefactory.wien/" id="banner-4">
+                <img src="img/banner-4.png" alt="CF" id="banner-4_image">
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="article.html">Article</a></li>
+        </ul>
+        <div class='footer_image'>
+            <img src="img/logo-newspaper-cf.png" alt="newspaper CF">
+        </div>
+        <p>Mark - CodeFactory 2021</p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
