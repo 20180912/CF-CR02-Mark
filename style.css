@@ -88,6 +88,9 @@ h1 {
 #banner-mobile-fswd, #banner-mobile-cf {
   display: none; }
 
+.column_tablet_banner {
+  display: none; }
+
 /*Flexboxing*/
 header {
   display: flex;
@@ -154,7 +157,7 @@ li {
 /*Setting up the media queries*/
 @media screen and (max-width: 480px) {
   /*Exchanging desktop with mobile banners*/
-  #date, #banner-1, #banner-3, #banner-4 {
+  #date, #banner-1, #banner-3, #banner-4, .column_tablet_banner {
     display: none; }
 
   #banner-mobile-fswd, #banner-mobile-cf {
@@ -187,6 +190,60 @@ li {
 
   #banner-mobile-fswd, #banner-mobile-cf {
     width: 45%; }
+
+  /*Removing the fixed heights*/
+  .column {
+    height: 100%; }
+
+  /*Formatting the images*/
+  #banner-mobile-fswd_image, #banner-mobile-cf_image {
+    width: 100%;
+    height: 10em;
+    object-fit: cover; }
+
+  .article_image {
+    height: 10em; } }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /*Exchanging desktop with mobile banners*/
+  #date, #banner-1, #banner-3, #banner-4 {
+    display: none; }
+
+  .column_tablet_banner {
+    display: block; }
+
+  /*Resizing and cetering the navigation bars*/
+  .headline {
+    font-size: 0.8em; }
+
+  nav li {
+    font-size: 1em; }
+
+  ul {
+    justify-content: center; }
+
+  /*Adjusting the margins */
+  a[class^="article"], #banner-mobile-fswd_tablet, #banner-mobile-cf_tablet {
+    margin: 0.5em 0 0.5em 0; }
+
+  /*Restyling the footer*/
+  .footer_image {
+    justify-content: center; }
+
+  footer {
+    padding-top: 2em; }
+
+  /*Widening the articles to get rows of two elements*/
+  .column {
+    width: 30%; }
+
+  .column_tablet_banner {
+    width: 30%; }
+
+  /*Creating a flexbox for the new banner row*/
+  .column_tablet_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
   /*Removing the fixed heights*/
   .column {
