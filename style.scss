@@ -87,7 +87,7 @@ h1 {
     position: absolute;
     background-color: $secondary-background;
     bottom: 0%;
-    width: 100%;
+    width: 100%; //question: In Chrome, the edges of image and box don't align perfectly while in Firefox they do -> why?
     height: 3em;
     display: table;
 }
