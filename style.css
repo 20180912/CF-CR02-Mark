@@ -8,6 +8,11 @@
   color: white;
   font-family: Arial; }
 
+/*Setting up a container*/
+.container {
+  background: transparent;
+  width: 100%; }
+
 /*Unsetting the default formatting for links, otherwise output depens on the browser*/
 a {
   text-decoration: none; }
@@ -79,16 +84,13 @@ h1 {
 .column {
   height: 32em; }
 
-/*Styling Banners*/
+/*Styling and hiding banners*/
 .banner {
   width: 100%;
   text-align: left;
   font-weight: bold; }
 
-#banner-mobile-fswd, #banner-mobile-cf {
-  display: none; }
-
-.column_tablet_banner {
+#banner-mobile-fswd, #banner-mobile-cf, .column_tablet_banner {
   display: none; }
 
 /*Flexboxing*/
@@ -133,7 +135,7 @@ section[class^="content"] {
   padding: 1%; }
 
 .headline {
-  padding: 0.2em; }
+  padding: 0.0em; }
 
 footer {
   padding-bottom: 2em; }
@@ -148,11 +150,6 @@ nav li {
 li {
   list-style-type: none;
   padding: 1%; }
-
-/*Starting with the container, scaling is done relative to make it dynamic*/
-.container {
-  background: transparent;
-  width: 100%; }
 
 /*Setting up the media queries*/
 @media screen and (max-width: 480px) {
@@ -257,5 +254,18 @@ li {
 
   .article_image {
     height: 10em; } }
+/*Adding a transformation for the desktop version for fun*/
+@media screen and (min-width: 769px) {
+  .article_top:hover .headline_box {
+    height: 15em; }
+
+  .article_bottom:hover .headline_box {
+    height: 15em; }
+
+  .headline_box {
+    transition: height 0.3s ease-out; }
+
+  li:hover {
+    background-color: #5b191a; } }
 
 /*# sourceMappingURL=style.css.map */
